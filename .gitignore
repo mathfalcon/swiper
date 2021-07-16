@@ -11,24 +11,6 @@ custom
 
 .versions
 .idea
-package/cjs
-package/components
-package/esm
-package/types
-!package/types/package.json
-package/**/*.js
-package/**/*.map
-package/**/*.metadata.json
-package/**/*.ts
-package/**/*.d.ts*
-package/*.js
-package/*.ts
-package/*.css
-package/*.map
-package/*.less
-package/*.scss
-package/*.svelte
-!package/postinstall.js
 dist/demo
 
 

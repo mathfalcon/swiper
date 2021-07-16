@@ -12,7 +12,6 @@ const Cube = {
       height: swiperHeight,
       rtlTranslate: rtl,
       size: swiperSize,
-      browser,
     } = swiper;
     const params = swiper.params.cubeEffect;
     const isHorizontal = swiper.isHorizontal();
@@ -135,11 +134,11 @@ const Cube = {
         );
       }
     }
-    const zFactor = browser.isSafari || browser.isWebView ? -swiperSize / 2 : 0;
+
     $wrapperEl.transform(
-      `translate3d(0px,0,${zFactor}px) rotateX(${
-        swiper.isHorizontal() ? 0 : wrapperRotate
-      }deg) rotateY(${swiper.isHorizontal() ? -wrapperRotate : 0}deg)`,
+      `translate3d(0px,0,0px) rotateX(${swiper.isHorizontal() ? 0 : wrapperRotate}deg) rotateY(${
+        swiper.isHorizontal() ? -wrapperRotate : 0
+      }deg)`,
     );
   },
   setTransition(duration) {
